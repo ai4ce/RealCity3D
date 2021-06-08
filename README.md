@@ -1,11 +1,11 @@
 ## Introduction
 
-Existing 3D shape datasets foster 3D deep learning research in the vision, graphics, and robotics communities by motivating research, specifying challenges, and enabling model comparisons. However, most existing 3D shape datasets are comprised of CAD models or point clouds cans at either object-level or room-level, leaving out a large source of 3D shape data: real-world cities. Cities are important because they contain complex shapes such as skyscrapers, residential buildings, roads, and bridges. These shapes contain rich details that can be significantly different from object-level and room-level 3D shapes. Such inherent domain differences bring challenges to existing deep learning methods on 3D data, especially unsupervised ones, therefore inviting additional research in this area. In this work, we collect and process more than 1,000,000 georeferenced 3D shapes from the city of New York and the city of Zurich,and demonstrate the performance gap of three unsupervised 3D deep learning methods on our dataset and existing datasets. We are also actively working to include other major world cities and benchmarking more 3D deep learning methodson this dataset. 
+Existing 3D shape datasets in the research community are generally limited to objects or scenes at the room or street level. City level shape datasets are rare due to the difficulty in data collection and processing. However, city level datasets are important as they present a new category of 3D data - one with a high variance in geometric complexity and size. Residential buildings, skyscrapers, historical buildings, and modern commercial buildings all present unique geometric structures and styles. This work focuses on collecting city level object data, demonstrating the unique geometric properties of the dataset, and proposing new research directions and benchmarks for city generation. To that end, we collect over 1,000,000 geo-referenced objects for New York City and Zurich. We benchmark the performance of various state-of-the-art methods for two challenging tasks: (1) city layout generation, and (2) building shape generation. Moreover, we propose an auto-encoding tree neural network for 2D building footprint and 3D building cuboid generation. The dataset, tools, and algorithms will be released to the community.
 
 This repository is contains the tools and data for Real Urban Structure data in multiple formats.
 
 ## Authors
-Tanay Varshney, Yuqiong Li, Ruoyu Wang, Xuchu Xu, Hang Zhao, Zhiding Yu, Chen Feng
+Chen Feng, Wenyu Han, Congcong Wen, Hang Zhao, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan
 
 ## Paper 
 [link](https://scene-understanding.com/papers/RealCity3D.pdf)
