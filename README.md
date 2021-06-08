@@ -5,7 +5,7 @@ Existing 3D shape datasets in the research community are generally limited to ob
 This repository is contains the tools and data for Real Urban Structure data in multiple formats.
 
 ## Authors
-Chen Feng, Wenyu Han, Congcong Wen, Hang Zhao, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan
+Chen Feng, Congcong Wen, Wenyu Han, Hang Zhao, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan
 
 ## Paper 
 [link](https://scene-understanding.com/papers/RealCity3D.pdf)
@@ -47,4 +47,4 @@ Planned for release
 
 ## Contact
 
-Please contact Tanay Varshney at tanay at nyu dot edu or Yuqiong Li at yl5090 at nyu dot edu for questions regarding this project.
+Please contact Congcong Wen at cw3437 at nyu dot edu or Wenyu Han at wh1264 at nyu dot edu for questions regarding this project.
