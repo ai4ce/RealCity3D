@@ -7,8 +7,7 @@ This repository is contains the tools and data for Real Urban Structure data in 
 ## Authors
 Congcong Wen, Wenyu Han, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan, Hang Zhao, Chen Feng,
 
-## Paper 
-[link](https://scene-understanding.com/papers/RealCity3D.pdf)
+
 
 ## Datasets
 The current release contains the point cloud and mesh forms of the cities below. The data is geo referenced to facilitate "City Level" tasks.
@@ -19,7 +18,7 @@ The current release contains the point cloud and mesh forms of the cities below.
 | Zurich | Switzerland | Europe | [download](https://drive.google.com/drive/folders/17OJtbjm3sJxIIaZSdc_UEVnUC8PuxSuy?usp=sharing) | | [download](https://drive.google.com/drive/folders/17IRpVipV9Y7l3v8YGATem6juTmQkDABq?usp=sharing) |[download](https://drive.google.com/drive/folders/1zsojfGOkraFhMe76t1osJ8gHJs9KT7EA?usp=sharing) | |
 
 
-[NYC 64^3 voxel](https://drive.google.com/open?id=1KAPIj_Zyu6htnEebHnmAOGjfZliML2U-)
+<!-- [NYC 64^3 voxel](https://drive.google.com/open?id=1KAPIj_Zyu6htnEebHnmAOGjfZliML2U-) -->
 ## Tools
 
 Following are the tools we have released or are planning to release:
