@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>RealCity3D</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+    <!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+    <link rel="icon" type="image/png" href="FLAT.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110862391-3');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="app.js"></script>
+	
+	<style> 
+	.caption{font-weight:bold;text-align: center} 
+	
+	</style>
+
+</head>
+
+<body>
+<div class="container" id="main">
+    <div class="row">
+        <h1 class="col-md-12 text-center">
+            RealCity3D: A Large-scale Georeferenced <br> 3D Shape Dataset of Real-world Cities </br>
+<!--            <small>-->
+<!--                ICLR 2021-->
+<!--            </small>-->
+        </h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <ul class="list-inline">
+                <li>
+                    <a href="http://www.wencc.xyz">
+                        Congcong Wen
+                    </a><sup>1 *</sup>
+                </li>
+                <li>
+                    <a href="https://github.com/WenyuHan-LiNa">
+                        Wenyu Han
+                    </a><sup>1 *</sup>
+                </li>
+				<li>
+                    <a href="">
+                        Lazarus Chok 
+                    </a><sup>1 &dagger;</sup>
+                </li>
+				<li>
+                    <a href="">
+                        Yan Liang Tan
+                    </a><sup>1 &dagger;</sup>
+                </li>
+				<br>
+				<li>
+                    <a href="">
+                        Sheung Lung Chan
+                    </a><sup>1 &dagger;</sup>
+                </li>
+                <li>
+                    <a href="http://people.csail.mit.edu/hangzhao/">
+                        Hang Zhao
+                    </a><sup>2</sup>
+                </li>
+                <li>
+                    <a href="https://engineering.nyu.edu/faculty/chen-feng">
+                        Chen Feng
+                    </a><sup>1 &Dagger;</sup>
+                </li>
+            </ul>
+            <sup>1 </sup>New York University, <sup>2 </sup>Tsinghua University
+			<br>
+			<sup>*</sup> Equal contributions.
+			<br>
+			<sup>&dagger;</sup> Equal contributions.
+			<br>
+			<sup>&Dagger;</sup> The corresponding author is Chen Feng <a href="cfeng@nyu.edu">cfeng@nyu.edu</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-xs-4 col-sm-2 col-sm-offset-3 text-center">
+            <a href="https://ai4ce.github.io">
+                <image src="ai4ce.jpg" height="50px"></image>
+                <br>
+                <h4><strong>Lab</strong></h4>
+            </a>
+        </div>
+		<!--这是一个注释，注释在浏览器中不会显示-->
+        <div class="col-xs-4 col-sm-2 text-center">
+            <a href="">
+                <image src="paper.png" height="50px"></image>
+                <br>
+                <h4><strong>Paper</strong></h4>
+            </a>
+        </div>
+        <div class="col-xs-4 col-sm-2 text-center">
+            <a href="https://github.com/ai4ce/RealCity3D">
+                <image src="github.png" height="50px"></image>
+                <br>
+                <h4><strong>Codes</strong></h4>
+            </a>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Abstract
+            </h3>
+          Existing 3D shape datasets in the research community are generally limited to objects or scenes at the home level. City level shape datasets are rare due to the difficulty in data collection and processing. However, such datasets uniquely present a new type of 3D data with a high variance in geometric complexity and spatial layout styles, such as residential/historical/commercial buildings and skyscrapers. This work focuses on collecting such data, and proposes city generation as new tasks for data-driven content generation. Thus, we collect over 1,000,000 geo-referenced 3D building models from New York City and Zurich. We benchmark various baseline performance on two challenging tasks: (1) city layout generation, and (2) building shape generation. Moreover, we propose an auto-encoding tree neural network for 2D building footprint and 3D building cuboid generation. The dataset, tools, and 12 algorithms will be released to the community.
+            <br>
+            <br>
+            <image src="figs/fig_realcity3d.png" width="100%" class="center"></image>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Datasets
+            </h3>
+            The current RealCity3D contains more than 1,000,000 geo-referenced objects of New York City and Zurich. The four different representations are provided for each object, including polygon meshes, triangle meshes, point clouds, and voxel grids.
+            <br>
+            <br>
+			<div align=center valign=middle>
+				<style type="text/css">
+				.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+				.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+				  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+				.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+				  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+				.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+				.tg .tg-k1r3{background-color:#FFF;border-color:inherit;color:#24292E;text-align:center;vertical-align:top}
+				.tg .tg-rpk5{background-color:#FFF;border-color:inherit;color:#24292E;text-align:center;text-decoration:underline;vertical-align:top
+				  }
+				.tg .tg-7ndt{background-color:#FFF;border-color:inherit;color:#24292E;text-align:center;vertical-align:middle}
+				</style>
+				<table class="tg">
+				<thead>
+				  <tr>
+					<th class="tg-c3ow">City</th>
+					<th class="tg-c3ow">Country</th>
+					<th class="tg-c3ow">Continent</th>
+					<th class="tg-c3ow">Raw Meshes</th>
+					<th class="tg-c3ow">Voxel</th>
+					<th class="tg-c3ow">Triangulated Meshes</th>
+					<th class="tg-c3ow">Point Cloud</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td class="tg-c3ow">New York City</td>
+					<td class="tg-c3ow">United States</td>
+					<td class="tg-c3ow">North America</td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1e11MGq9BYS8fFdbDUWBtaL3cLRZ2aFNT?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/file/d/1wAGWK9M-jMlNbXsurosXjRqbj6Hmfk7N/view?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1v0ZiqweL3mX82Qa7OEPKY8DRwCS5mj87?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/open?id=1b1edO0_zgSlwnnDfH7S9dcuNvsFHtM1A"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+				  </tr>
+				  <tr>
+					<td class="tg-c3ow">Zurich</td>
+					<td class="tg-c3ow">Switzerland</td>
+					<td class="tg-c3ow">Europe</td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/17OJtbjm3sJxIIaZSdc_UEVnUC8PuxSuy?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+					<td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/17OJtbjm3sJxIIaZSdc_UEVnUC8PuxSuy?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/17IRpVipV9Y7l3v8YGATem6juTmQkDABq?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+					<td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1zsojfGOkraFhMe76t1osJ8gHJs9KT7EA?usp=sharing"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+				  </tr>
+				</tbody>
+				</table>
+				</div>
+				<br><br>
+				<image src="figs/fig_nyc_details.png" width="100%" class="center"></image>
+				<br><br>
+				<image src="figs/fig_zurich_details.png" width="100%" class="center"></image>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Benchmarks
+            </h3>
+			
+			<h4>
+                Task 1: City layout generation.
+            </h4>
+
+			<div class='caption'>Quantitative comparisons of city layout generation performance with various data-drivenbaseline methods.</div>
+			<image src="figs/table_task1.jpg" width="100%" class="center"></image>
+			<br><br>
+			<div class='caption'>City layout generation results of the models trained on NYC dataset.</div>
+			<image src="figs/fig_task1_2D.jpg" width="100%" class="center"></image>
+			<br><br>
+			<div class='caption'>3D generation results of AETree trained on the NYC Dataset.</div>
+			<image src="figs/fig_task1_3D.jpg" width="100%" class="center"></image>
+            <br><br>
+			<h4>
+				Task 2: Building shape generation.
+			</h4>
+			<div class='caption'>Benchmark of building point cloud generation on two datasets</div>
+			<div align="center"><image src="figs/table_task2.jpg" width="80%" class="center"></image></div>
+			<br><br>
+			<div class='caption'>Some testing results of FoldingNet trained on RealCity3D.</div>
+			<image src="figs/fig_task2_rec.jpg" width="100%" class="center" ></image>
+			<br><br>
+			<div class='caption'>Some shape generation results of Latent-GAN trained on RealCity3D.</div>
+			<image src="figs/fig_task2_gen.jpg" width="100%" class="center"></image>
+			<br><br>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Acknowledgement
+            </h3>
+            The authors gratefully acknowledge the useful comments and suggestions from Yuqiong Li and Tanay Varshney.
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                BibTeX
+            </h3>
+            <div class="form-group col-md-10 col-md-offset-1">
+                <textarea id="bibtex" class="form-control" readonly>
+
+                </textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
