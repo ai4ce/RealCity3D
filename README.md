@@ -5,30 +5,28 @@ Existing 3D shape datasets in the research community are generally limited to ob
 This repository is contains the tools and data for Real Urban Structure data in multiple formats.
 
 ## Authors
-Congcong Wen, Wenyu Han, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan, Hang Zhao, Chen Feng,
+Congcong Wen, Wenyu Han, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan, Hang Zhao, Chen Feng
 
-## Paper 
-[link](https://scene-understanding.com/papers/RealCity3D.pdf)
 
 ## Datasets
 The current release contains the point cloud and mesh forms of the cities below. The data is geo referenced to facilitate "City Level" tasks.
 
-| City | Country | Continent | Raw Meshes | Voxel | Triangulated Meshes | Point Cloud | DEM |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| New York City | United States | North America | [download](https://drive.google.com/drive/folders/1e11MGq9BYS8fFdbDUWBtaL3cLRZ2aFNT?usp=sharing) | [download](https://drive.google.com/file/d/1wAGWK9M-jMlNbXsurosXjRqbj6Hmfk7N/view?usp=sharing)|[download](https://drive.google.com/drive/folders/1v0ZiqweL3mX82Qa7OEPKY8DRwCS5mj87?usp=sharing) |[download](https://drive.google.com/open?id=1b1edO0_zgSlwnnDfH7S9dcuNvsFHtM1A)| |
-| Zurich | Switzerland | Europe | [download](https://drive.google.com/drive/folders/17OJtbjm3sJxIIaZSdc_UEVnUC8PuxSuy?usp=sharing) | | [download](https://drive.google.com/drive/folders/17IRpVipV9Y7l3v8YGATem6juTmQkDABq?usp=sharing) |[download](https://drive.google.com/drive/folders/1zsojfGOkraFhMe76t1osJ8gHJs9KT7EA?usp=sharing) | |
+| City | Country | Continent | Polygon Meshes | Voxel | Triangulated Meshes | Point Cloud |
+| --- | --- | --- | --- | --- | --- | --- |
+| New York City | United States | North America | [download](https://drive.google.com/drive/folders/1XAfaWw0NRgJRefyYgItc_AI7ahEo_HVj?usp=sharing) | [download](https://drive.google.com/drive/folders/10_8PQ4SAwXv8VHM3yzo1A6k7DSI89gC0?usp=sharing)|[download](https://drive.google.com/drive/folders/1kVeAs3lsLND5xVWjYmsyNxID7xIZsAkt?usp=sharing) |[download](https://drive.google.com/drive/folders/10FN8wcDdY5u8XC6Gxm1BbK6EvZCjlR4y?usp=sharing)| |
+| Zurich | Switzerland | Europe | [download](https://drive.google.com/drive/folders/1t5Vo8eNbzqW2KL1KeDs07j6khSgG4t2r?usp=sharing) | [download](https://drive.google.com/drive/folders/1Y93S-QuqfamhvIOmJvRu0HhuEYyv3yW_?usp=sharing) | [download](https://drive.google.com/drive/folders/1lDtRJSznBw2jc_px1yrZ-f_zDboGeonU?usp=sharing) |[download](https://drive.google.com/drive/folders/1hsrvLJMTwz2KaDdeSTTUCiTy-VPzJqUX?usp=sharing) | |
 
+## [Website] (https://ai4ce.github.io/RealCity3D/)
 
-[NYC 64^3 voxel](https://drive.google.com/open?id=1KAPIj_Zyu6htnEebHnmAOGjfZliML2U-)
 ## Tools
 
-Following are the tools we have released or are planning to release:
+Following are the tools we have released:
 
 - **Geo-Location Extractor**: Python tool to extract geolocations of structures from the mesh files. (GeoProcessing.py)
 
 - **Search Tool**: Python tool for retreiving all structures in a bounding box. (GeoProcessing.py)
 
-- **Visualization Tool**: Tool for vizualising all structures. (Planned Release)
+
 
 ### Geo Processing and Search Tool
 
@@ -42,8 +40,7 @@ The Extraction mode needs the location of the raw mesh files.
 
 These tools have been tested for python 3.6.8
 
-### Visualization Tool
-Planned for release
+
 
 ## Contact
 
