@@ -17,7 +17,7 @@ The current release contains the point cloud and mesh forms of the cities below.
 | Zurich | Switzerland | Europe | [download](https://drive.google.com/drive/folders/1t5Vo8eNbzqW2KL1KeDs07j6khSgG4t2r?usp=sharing) | [download](https://drive.google.com/drive/folders/1Y93S-QuqfamhvIOmJvRu0HhuEYyv3yW_?usp=sharing) | [download](https://drive.google.com/drive/folders/1lDtRJSznBw2jc_px1yrZ-f_zDboGeonU?usp=sharing) |[download](https://drive.google.com/drive/folders/1hsrvLJMTwz2KaDdeSTTUCiTy-VPzJqUX?usp=sharing) | |
 
 ## Website 
-[link] (https://ai4ce.github.io/RealCity3D/)
+[link](https://ai4ce.github.io/RealCity3D/)
 
 ## Tools
 
