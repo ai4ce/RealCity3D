@@ -1,0 +1,1 @@
+python trimesh2point_cloud.py -i /mnt/sda/CityGML/data/zurich/obj/ -o /mnt/sda/CityGML/data/zurich/ply/

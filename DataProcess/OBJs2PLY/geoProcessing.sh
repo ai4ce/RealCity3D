@@ -1,0 +1,1 @@
+python GeoProcessing.py --input-data /mnt/sda/CityGML/data/boli/obj/Charlottenburg-Wilmersdorf
