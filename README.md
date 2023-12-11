@@ -6,7 +6,7 @@ This repository is contains the tools and data for Real Urban Structure data in 
 
 ## Authors
 Wenyu Han, Congcong Wen*, Lazarus Chok, Yan Liang Tan, Sheung Lung Chan, Hang Zhao, Chen Feng
-* Corresponding author. Email: wencc@nyu.edu
+*Corresponding author. Email: wencc@nyu.edu
 
 ## Datasets
 The current release contains the point cloud and mesh forms of the cities below. The data is geo referenced to facilitate "City Level" tasks.
