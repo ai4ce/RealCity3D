@@ -1,0 +1,14 @@
+# 忽略所有文件
+*
+
+# 不忽略文件.gitignore和*.foo
+!*/
+!.gitignore
+!*.py
+!*/*.py
+!*.sh
+!*.cu
+!*.h
+!*.cpp
+!*.ipynb
+!Makefile
