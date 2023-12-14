@@ -1,7 +1,7 @@
 ## Introduction
 
 Existing 3D shape datasets in the research community are generally limited to objects or scenes at the room or street level. City level shape datasets are rare due to the difficulty in data collection and processing. However, city level datasets are important as they present a new category of 3D data - one with a high variance in geometric complexity and size. Residential buildings, skyscrapers, historical buildings, and modern commercial buildings all present unique geometric structures and styles. This work focuses on collecting city level object data, demonstrating the unique geometric properties of the dataset, and proposing new research directions and benchmarks for city generation. To that end, we collect over 1,000,000 geo-referenced objects for New York City and Zurich. We benchmark the performance of various state-of-the-art methods for two challenging tasks: (1) city layout generation, and (2) building shape generation. Moreover, we propose an auto-encoding tree neural network for 2D building footprint and 3D building cuboid generation. The dataset, tools, and algorithms will be released to the community.
-![Screenshot from 2023-12-13 22-56-20](https://github.com/ai4ce/RealCity3D/assets/118200929/28413e13-1378-4be5-a32b-abf793c5948a)
+![Screenshot from 2023-12-13 22-56-20](https://github.com/ai4ce/RealCity3D/assets/118200929/dda408af-d0fb-4875-91c6-1fe180d10269)
 
 This repository is contains the tools and data for Real Urban Structure data in multiple formats.
 
