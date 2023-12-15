@@ -145,7 +145,7 @@
             <h3>
                 Abstract
             </h3>
-          Existing 3D shape datasets in the research community are generally limited to objects or scenes at the home level. City level shape datasets are rare due to the difficulty in data collection and processing. However, such datasets uniquely present a new type of 3D data with a high variance in geometric complexity and spatial layout styles, such as residential/historical/commercial buildings and skyscrapers. This work focuses on collecting such data, and proposes city generation as new tasks for data-driven content generation. Thus, we collect over 1,000,000 geo-referenced 3D building models from New York City and Zurich. We benchmark various baseline performance on two challenging tasks: (1) city layout generation, and (2) building shape generation. Moreover, we propose an auto-encoding tree neural network for 2D building footprint and 3D building cuboid generation. The dataset, tools, and algorithms will be released to the community.
+          Existing 3D shape datasets in the research community are generally limited to objects or scenes at the home level. City level shape datasets are rare due to the difficulty in data collection and processing. However, such datasets uniquely present a new type of 3D data with a high variance in geometric complexity and spatial layout styles, such as residential/historical/commercial buildings and skyscrapers. This work focuses on collecting such data, and proposes city generation as new tasks for data-driven content generation. Thus, we collect over 3,000,000 geo-referenced objects for the of New York, Zurich, Tokyo, Berlin, Boston, and several other large cities. We benchmark various baseline performance on two challenging tasks: (1) city layout generation, and (2) building shape generation. Moreover, we propose an auto-encoding tree neural network for 2D building footprint and 3D building cuboid generation. The dataset, tools, and algorithms will be released to the community.
             <br>
             <br>
             <image src="figs/fig_realcity3d.png" width="100%" class="center"></image>
@@ -215,6 +215,93 @@
 				<image src="figs/fig_nyc_details.png" width="100%" class="center"></image>
 				<br><br>
 				<image src="figs/fig_zurich_details.png" width="100%" class="center"></image>
+                We also collect a lot of data in CityGML format, and we provide code to convert them to mesh and pointcloud.
+                <br>
+                <br>
+                <div align=center valign=middle>
+                    <style type="text/css">
+                    .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+                    .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+                      font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+                      font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+                    .tg .tg-k1r3{background-color:#FFF;border-color:inherit;color:#24292E;text-align:center;vertical-align:top}
+                    .tg .tg-rpk5{background-color:#FFF;border-color:inherit;color:#24292E;text-align:center;text-decoration:underline;vertical-align:top
+                      }
+                    .tg .tg-7ndt{background-color:#FFF;border-color:inherit;color:#24292E;text-align:center;vertical-align:middle}
+                    </style>
+                    <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-c3ow">City</th>
+                        <th class="tg-c3ow">Country</th>
+                        <th class="tg-c3ow">Continent</th>
+                        <th class="tg-c3ow">CityGML</th>
+                        <th class="tg-c3ow">Meshes</th>
+                        <th class="tg-c3ow">Point Cloud</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-c3ow">Vienna</td>
+                        <td class="tg-c3ow">Austria</td>
+                        <td class="tg-c3ow">Europe</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1pBcv4RbF23MlY-ny5-t0vtk5dsbxNUg0?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1wrwslWn3ZufCKOxZSIY03R20ecJWV6t2?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1MT5tZ1ZVHVnNeC2pkzCRvr52pnWfWBYE?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-c3ow">Tokyo</td>
+                        <td class="tg-c3ow">Japan</td>
+                        <td class="tg-c3ow">Asian</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1CwyOz6_jL1g4PSnM4rNCgiUACABrUG2y?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/1T7sTcFiGFdkAb_fBuGhOxnxqiHKYykPY?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1AvjSxdChoKeCqvlU9m3yl5P3prq10iaU?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-c3ow">Luxembourg</td>
+                        <td class="tg-c3ow">Luxembourg</td>
+                        <td class="tg-c3ow">Europe</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1YaIgSJE_xMpTgjl-WawTrd9Mvq3PTT7i?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/1ZqGT4go9nD4L81Zfg44ksXfdtSDbDUQt?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1fsoR9X2ofFwdnBgrxhkn1N1Zd8m7tW8R?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-c3ow">Estonia</td>
+                        <td class="tg-c3ow">Estonia</td>
+                        <td class="tg-c3ow">Europe</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/13adH9H0n5RpDsC6dN1amo1ilc3lMfv49?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/1pahsjNQDAoET5BXJsQxeTdl67S5WyVi_?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1NlrnDJA8BQa1G0QGoVvIiKi4my87PGc6?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-c3ow">Brussels</td>
+                        <td class="tg-c3ow">Belgium</td>
+                        <td class="tg-c3ow">Europe</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/14ivE6LXnvDZ9N8bX0_E3fk4VzyoQ4_TP?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/1tHSs3AAwi125hNaMlglEIobB1IAGq83h?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1R9f4Tm_rWjKKgSh4HCZUp662BjZC51mO?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-c3ow">boston</td>
+                        <td class="tg-c3ow">United States</td>
+					    <td class="tg-c3ow">North America</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1qP6kHNNxxiFUeevPi6D4ynqYin1PN30q?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/1GAfWZd4nIzqCA2fXQr-JNELCYgsHdtTx?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/18Q6j_nnSwWuEnxICqsdTqpJyf6xo-T5S?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-c3ow">Berlin</td>
+                        <td class="tg-c3ow">Germany</td>
+                        <td class="tg-c3ow">Europe</td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1C7rZvyFxHMx5RyIWFjJG4nxXh8K66hA6?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-7ndt"><a href="https://drive.google.com/drive/folders/1y1GXNRL78aZUpn2GZ4Z_TqNySiszkJud?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                        <td class="tg-k1r3"><a href="https://drive.google.com/drive/folders/1gxzAgrLdD8YQKmS5pLUkOq7sNMOXjss8?usp=drive_link"><span style="text-decoration:none;color:var(--color-text-link);background-color:transparent">download</span></a></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                    
         </div>
     </div>
 
