@@ -15,8 +15,8 @@ The current release contains the point cloud and mesh forms of the cities below.
 
 | City | Country | Continent | Polygon Meshes | Voxel | Triangulated Meshes | Point Cloud |
 | --- | --- | --- | --- | --- | --- | --- |
-| New York City | United States | North America | [download](https://drive.google.com/drive/folders/1XAfaWw0NRgJRefyYgItc_AI7ahEo_HVj?usp=sharing) | [download](https://drive.google.com/drive/folders/10_8PQ4SAwXv8VHM3yzo1A6k7DSI89gC0?usp=sharing)|[download](https://drive.google.com/drive/folders/1kVeAs3lsLND5xVWjYmsyNxID7xIZsAkt?usp=sharing) |[download](https://drive.google.com/drive/folders/10FN8wcDdY5u8XC6Gxm1BbK6EvZCjlR4y?usp=sharing)| |
-| Zurich | Switzerland | Europe | [download](https://drive.google.com/drive/folders/1t5Vo8eNbzqW2KL1KeDs07j6khSgG4t2r?usp=sharing) | [download](https://drive.google.com/drive/folders/1Y93S-QuqfamhvIOmJvRu0HhuEYyv3yW_?usp=sharing) | [download](https://drive.google.com/drive/folders/1lDtRJSznBw2jc_px1yrZ-f_zDboGeonU?usp=sharing) |[download](https://drive.google.com/drive/folders/1hsrvLJMTwz2KaDdeSTTUCiTy-VPzJqUX?usp=sharing) | |
+| New York City | United States | North America | [download](https://huggingface.co/datasets/ai4ce/Realcity3D) | [download](https://huggingface.co/datasets/ai4ce/Realcity3D) |[download](https://huggingface.co/datasets/ai4ce/Realcity3D)| |
+| Zurich | Switzerland | Europe | [download](https://huggingface.co/datasets/ai4ce/Realcity3D) | [download](https://huggingface.co/datasets/ai4ce/Realcity3D) | [download](https://huggingface.co/datasets/ai4ce/Realcity3D) |[download](https://huggingface.co/datasets/ai4ce/Realcity3D) | |
 
 ## [Website](https://ai4ce.github.io/RealCity3D/) 
 
